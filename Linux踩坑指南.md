@@ -27,3 +27,9 @@
 问题：以ssh克隆git项目且上传了公钥时，仍需要密码。
 
 原因：.ssh目录和autorized_keys文件的权限必须分别是700和600！
+
+---
+
+问题：shell脚本运行异常，提示`-ash: ./脚本名: not found`。
+
+原因：未安装bash解释器，修改`#!/bin/bash`为`#!/bin/sh`。
